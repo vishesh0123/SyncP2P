@@ -1,8 +1,8 @@
-import React from 'react';
-import { useAuth } from '@polybase/react';
+import React from 'react'
+import { useAuth } from '@polybase/react'
 
 export default function PolybaseAuth() {
-  const { auth, state } = useAuth();
+  const { auth, state } = useAuth()
   return (
     <>
       <div>PolybaseAuth</div>
@@ -15,5 +15,5 @@ export default function PolybaseAuth() {
         </>
       )}
     </>
-  );
+  )
 }

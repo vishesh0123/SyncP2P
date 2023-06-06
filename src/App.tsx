@@ -9,6 +9,7 @@ import { PolybaseProvider, AuthProvider } from '@polybase/react'
 import { Polybase } from '@polybase/client'
 import { Auth } from '@polybase/auth'
 import PolybaseAuth from './components/PolybaseAuth'
+import PeerDiscovery from './components/PeerDiscovery'
 
 const polybase = new Polybase()
 const auth = new Auth()
@@ -23,13 +24,14 @@ const router = createBrowserRouter([
         <>
           <h1>{data.message}</h1>
           <PolybaseAuth />
+          <PeerDiscovery/>
         </>
       )
     }
   }
 ])
 
-function App (): JSX.Element {
+function App(): JSX.Element {
   return (
     <PolybaseProvider polybase={polybase}>
       <AuthProvider auth={auth} polybase={polybase}>
