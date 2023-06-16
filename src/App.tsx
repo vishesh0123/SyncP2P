@@ -12,6 +12,7 @@ import PolybaseAuth from './components/PolybaseAuth'
 import PeerDiscovery from './components/PeerDiscovery'
 import Main from './pages/main'
 import LibP2P from './components/LibP2P'
+import LandingPage from './pages/LandingPage'
 
 const polybase = new Polybase()
 const auth = new Auth()
@@ -51,6 +52,18 @@ const router = createBrowserRouter([
       return (
         <>
           <LibP2P/>
+        </>
+      )
+    }
+  },
+  {
+    path: '/',
+    loader: () => ({ message: 'SyncP2P: Authentication' }),
+    Component (): JSX.Element {
+      const data = useLoaderData() as { message: string }
+      return (
+        <>
+          <LandingPage/>
         </>
       )
     }
