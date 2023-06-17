@@ -1,0 +1,43 @@
+.syncp2p {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+   
+}
+
+.status {
+    height:100vh;
+    width: 320px;
+    border: 1px solid #FFFF00;
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Bree Serif', serif !important;
+    font-weight: lighter;
+    overflow-x: hidden;
+    
+}
+
+.connectbox{
+    height: 100vh;
+    width:1045px ;
+    /* border: 1px solid #FFFF00; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connectbutton{
+    text-transform: none !important;
+    color: aliceblue !important;
+    font-size: 18px !important;
+    font-family: 'Bree Serif', serif !important;
+    text-shadow: 0.1em 0.1em 5em  whitesmoke;
+    border: 1px solid white !important;
+    border-radius: 5px !important;
+    
+}
+
+.connecticon{
+    color: aliceblue;
+}

@@ -1,0 +1,25 @@
+.statusText{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    transition: color 0.5s ease-in-out;
+    word-wrap: break-word;
+}
+
+.statusText:last-child{
+    animation: blink 1s ease-in;
+}
+
+@keyframes blink {
+    0% {
+      color: aliceblue;
+    }
+    50% {
+      color: #000;
+    }
+    100% {
+      color: aliceblue;
+    }
+  }

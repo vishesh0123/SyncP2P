@@ -5,11 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to bottom right, #000000, #333333);
+  background: linear-gradient(to bottom right, #000000, #333333) ;
   background-attachment: scroll;
-  text-shadow: 0.1em 0.1em 2em  grey;
+  
   
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

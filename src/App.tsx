@@ -8,50 +8,21 @@ import './App.css'
 import { PolybaseProvider, AuthProvider } from '@polybase/react'
 import { Polybase } from '@polybase/client'
 import { Auth } from '@polybase/auth'
-import PolybaseAuth from './components/PolybaseAuth'
-import PeerDiscovery from './components/PeerDiscovery'
-import Main from './pages/main'
-import LibP2P from './components/LibP2P'
 import LandingPage from './pages/LandingPage'
+import SyncP2P from './pages/SyncP2P'
 
 const polybase = new Polybase()
 const auth = new Auth()
 
 const router = createBrowserRouter([
   {
-    path: '/app',
+    path: '/syncp2p',
     loader: () => ({ message: 'SyncP2P: Authentication' }),
     Component (): JSX.Element {
       const data = useLoaderData() as { message: string }
       return (
         <>
-          <h1>{data.message}</h1>
-          <PolybaseAuth />
-          <PeerDiscovery/>
-        </>
-      )
-    }
-  },
-  {
-    path: '/p2p',
-    loader: () => ({ message: 'SyncP2P: Authentication' }),
-    Component (): JSX.Element {
-      const data = useLoaderData() as { message: string }
-      return (
-        <>
-          <Main/>
-        </>
-      )
-    }
-  },
-  {
-    path: '/libp2p',
-    loader: () => ({ message: 'SyncP2P: Authentication' }),
-    Component (): JSX.Element {
-      const data = useLoaderData() as { message: string }
-      return (
-        <>
-          <LibP2P/>
+          <SyncP2P/>
         </>
       )
     }

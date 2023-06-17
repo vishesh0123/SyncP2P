@@ -1,0 +1,13 @@
+.filebox{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.filetext{
+    font-family: 'Bree Serif', serif !important;
+    color: aliceblue;
+    text-transform: none;
+    font-size: 25px !important;
+   
+}

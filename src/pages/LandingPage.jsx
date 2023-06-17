@@ -2,10 +2,12 @@ import React from 'react'
 import './LandingPage.css';
 import { Button, Container, Grid, Typography, Card, CardContent } from '@mui/material'
 import ComputerIcon from '@mui/icons-material/Computer';
-import { redirect } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 
 export default function LandingPage() {
+    const navigate = useNavigate();
+
 
     return (
         <div className="landing-page">
@@ -94,7 +96,7 @@ export default function LandingPage() {
                     </div>
                 </div>
 
-                <Button onClick={() => { redirect('/syncp2p') }} variant="contained" color="secondary" size="large" className='hero-button' >
+                <Button onClick={() => { navigate('/syncp2p') }} variant="contained" color="secondary" size="large" className='hero-button' >
                     Get Started
                 </Button>
             </div>
